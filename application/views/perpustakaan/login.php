@@ -22,12 +22,26 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-4">
-                        <div class="text-center" style="margin-top: 190px; margin-left: 20px;">
-                            
+                        <div style="margin-top: 130px;">
+                            <form method="post">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Nama</label>
+                                    <input type="text" name="nama_daftar" class="form-control" placeholder="Masukan Nama Anda">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="email_daftar" placeholder="Masukan Email Anda" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" name="password_daftar" placeholder="Masukan Password Anda" required class="form-control">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <img src="<?= base_url("asset/6263.jpg"); ?>" alt="notfound" style="width: 700px; margin-top: 100px">
+                    <div class="col-8">
+                        <img src="<?= base_url("asset/6263.jpg"); ?>" class="rounded float-end" alt="notfound" style="width: 680px; margin-top: 80px;">
                     </div>
                 </div>
             </div>

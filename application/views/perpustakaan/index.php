@@ -51,59 +51,64 @@ if(isset($_POST["btn"]))
 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div class="row">
+                        <div class="col-8">
+                            <img src="asset/6263.jpg" alt="" style="width: 750px;">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="col-4">
+                            <h5 class="text-center" style="margin-top:100px;">Form Masuk Akun</h5>
+                            <form method="post">
+                                <label for="" class="form-label">Nama</label>
+                                <input type="text" name="nama_masuk" class="form-control" placeholder="Masukan Nama Anda">
+                                <label for="" class="form-label mt-2">Kata Sandi</label>
+                                <input type="password" name="password_masuk" class="form-control mb-3" placeholder="Masukan Kata Sandi Anda">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" style="width: 100px;">Batal</button>
+                                    <button type="submit" class="btn btn-primary" name="btn_masuk" style="width: 100px;">Masuk</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                        <button type="button" class="btn btn-primary">Masuk</button>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form method="post">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div class="row">
+                        <div class="col-8">
+                            <img src="asset/6263.jpg" alt="" style="width: 750px;">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="col-4">
+                            <h5 class="text-center" style="margin-top:75px;">Form Pendaftaran Akun</h5>
+                            <form method="post">
+                                <label for="" class="form-label">Nama</label>
+                                <input type="text" name="nama_daftar" class="form-control" placeholder="Masukan Nama Anda">
+                                <label class="form-label mt-2">Email</label>
+                                <input type="email" name="email_daftar" class="form-control" placeholder="Masukan Email Anda">
+                                <label for="" class="form-label mt-2">Kata Sandi</label>
+                                <input type="password" name="password_daftar" class="form-control mb-3" placeholder="Masukan Kata Sandi Anda">
+                                <input type="hidden" name="tanggal_daftar" value="<?php echo date('d - M - Y') ?>">
+                                <input type="hidden" name="role_daftar" value="2">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" style="width: 100px;">Batal</button>
+                                    <button type="submit" class="btn btn-primary" name="btn_daftar" style="width: 100px;">Masuk</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <input type="hidden" name="tanggal" value="<?php echo date('d - M - Y') ?>">
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                        <button type="button" class="btn btn-primary">Masuk</button>
-                    </form>
                 </div>
             </div>
         </div>
